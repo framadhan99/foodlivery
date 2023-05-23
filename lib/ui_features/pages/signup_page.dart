@@ -21,7 +21,7 @@ class SignupPage extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            verticalSpace(150),
+            verticalSpace(100),
             Text(
               'Sign up',
               style: AssetStyles.mediumTitle.copyWith(
@@ -136,7 +136,8 @@ class SignupPage extends StatelessWidget {
                   ),
                 ),
               ],
-            )
+            ),
+            verticalSpace(50)
           ],
         ),
       ),
