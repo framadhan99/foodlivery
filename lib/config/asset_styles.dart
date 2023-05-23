@@ -42,4 +42,11 @@ class AssetStyles {
     fontSize: 14,
     color: Colors.white,
   );
+
+  static const TextStyle inriaSerifText = TextStyle(
+    fontFamily: 'inriaSerif',
+    fontWeight: FontWeight.w400,
+    fontSize: 24,
+    color: AssetColors.orangePastel,
+  );
 }

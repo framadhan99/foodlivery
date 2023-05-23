@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:foodlivery/app/app_theme.dart';
+import 'package:foodlivery/config/navigation_service.dart';
 import 'package:foodlivery/ui_features/pages/intro_page.dart';
 
 class App extends StatelessWidget {
@@ -8,7 +10,9 @@ class App extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: IntroPage(),
+      theme: theme,
+      navigatorKey: navigatorKey,
+      home: const IntroPage(),
     );
   }
 }
