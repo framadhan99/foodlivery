@@ -9,12 +9,14 @@ class ButtonPrimary extends StatelessWidget {
     this.height,
     this.width,
     this.onTap,
+    this.radius,
   });
 
   final String label;
   final TextStyle? labelStyle;
   final double? height;
   final double? width;
+  final double? radius;
   final Function()? onTap;
 
   @override
@@ -25,7 +27,7 @@ class ButtonPrimary extends StatelessWidget {
         height: height ?? 33,
         width: width ?? screenWidth(context),
         decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(10),
+          borderRadius: BorderRadius.circular(radius ?? 30),
           color: AssetColors.greenDark,
         ),
         child: Center(

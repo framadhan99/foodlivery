@@ -32,7 +32,7 @@ class AssetStyles {
   static const TextStyle smallDescription = TextStyle(
     fontFamily: 'Inter',
     fontWeight: FontWeight.w500,
-    fontSize: 8,
+    fontSize: 10,
     color: AssetColors.grey,
   );
 
