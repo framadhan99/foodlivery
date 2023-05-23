@@ -39,6 +39,7 @@ class LoginPage extends StatelessWidget {
                 color: AssetColors.greenDark,
               ),
             ),
+            verticalSpace(6),
             const TextFieldGeneral(),
             verticalSpace(9),
             Text(
@@ -49,6 +50,7 @@ class LoginPage extends StatelessWidget {
                 color: AssetColors.greenDark,
               ),
             ),
+            verticalSpace(6),
             const TextFieldGeneral(),
             verticalSpace(5),
             Align(
@@ -60,7 +62,7 @@ class LoginPage extends StatelessWidget {
               ),
             ),
             verticalSpace(50),
-            Align(
+            const Align(
               alignment: Alignment.center,
               child: ButtonPrimary(
                 label: 'Log in',

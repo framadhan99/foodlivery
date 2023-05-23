@@ -39,6 +39,7 @@ class SignupPage extends StatelessWidget {
                 color: AssetColors.greenDark,
               ),
             ),
+            verticalSpace(6),
             const TextFieldGeneral(),
             verticalSpace(9),
             Text(
@@ -49,6 +50,7 @@ class SignupPage extends StatelessWidget {
                 color: AssetColors.greenDark,
               ),
             ),
+            verticalSpace(6),
             const TextFieldGeneral(),
             verticalSpace(9),
             Text(
@@ -59,6 +61,7 @@ class SignupPage extends StatelessWidget {
                 color: AssetColors.greenDark,
               ),
             ),
+            verticalSpace(6),
             const TextFieldGeneral(),
             verticalSpace(50),
             const Align(
