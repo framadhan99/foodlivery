@@ -1,6 +1,6 @@
 class AssetPaths {
-  static const String imgBurger = 'assets/images/imgBUrger.png';
-  static const String imgBurger2 = 'assets/images/imgBUrger2.png';
+  static const String imgBurger = 'assets/images/imgBurger.png';
+  static const String imgBurger2 = 'assets/images/imgBurger2.png';
   static const String imgHeroHome = 'assets/images/imgHeroHome.png';
   static const String imgKuah = 'assets/images/imgKuah.png';
   static const String imgPancake = 'assets/images/imgPancake.png';
