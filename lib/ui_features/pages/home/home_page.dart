@@ -2,6 +2,7 @@ import 'package:dots_indicator/dots_indicator.dart';
 import 'package:flutter/material.dart';
 import 'package:foodlivery/config/config.dart';
 import 'package:foodlivery/config/ui_helper.dart';
+import 'package:foodlivery/ui_features/pages/home/detail_food_page.dart';
 import 'package:foodlivery/ui_features/widgets/card_food.dart';
 
 class HomePage extends StatelessWidget {
@@ -25,7 +26,8 @@ class HomePage extends StatelessWidget {
           child: Column(
             children: [
               Container(
-                padding: EdgeInsets.symmetric(horizontal: 20, vertical: 16),
+                padding:
+                    const EdgeInsets.symmetric(horizontal: 20, vertical: 16),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -50,7 +52,7 @@ class HomePage extends StatelessWidget {
                                   fontSize: 10,
                                   color: AssetColors.greenDark),
                             ),
-                            Icon(
+                            const Icon(
                               Icons.arrow_drop_down,
                               color: AssetColors.greenDark,
                             )
@@ -58,7 +60,7 @@ class HomePage extends StatelessWidget {
                         ),
                       ],
                     ),
-                    Icon(
+                    const Icon(
                       Icons.shopping_cart,
                       color: AssetColors.orangePastel,
                     )
@@ -104,8 +106,11 @@ class HomePage extends StatelessWidget {
                       right: 20,
                       bottom: 15,
                     ),
-                    child: CardFood(
-                      image: images[index],
+                    child: GestureDetector(
+                      onTap: () => nextScreen(const DetailFoodPage()),
+                      child: CardFood(
+                        image: images[index],
+                      ),
                     ),
                   ),
                 ),
