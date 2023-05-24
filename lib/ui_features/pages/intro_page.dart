@@ -5,7 +5,7 @@ import 'package:foodlivery/config/asset_styles.dart';
 import 'package:foodlivery/config/navigation_service.dart';
 import 'package:foodlivery/config/ui_helper.dart';
 import 'package:foodlivery/ui_features/pages/login_page.dart';
-import 'package:foodlivery/ui_features/widgets/button_primary.dart';
+import 'package:foodlivery/ui_features/widgets/button/button_primary.dart';
 
 class IntroPage extends StatelessWidget {
   const IntroPage({super.key});

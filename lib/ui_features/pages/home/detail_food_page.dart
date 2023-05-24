@@ -4,6 +4,7 @@ import 'package:foodlivery/config/asset_paths.dart';
 import 'package:foodlivery/config/asset_styles.dart';
 import 'package:foodlivery/config/navigation_service.dart';
 import 'package:foodlivery/config/ui_helper.dart';
+import 'package:foodlivery/ui_features/widgets/appbar/appbar_primary.dart';
 import 'package:foodlivery/ui_features/widgets/button/button_back.dart';
 
 class DetailFoodPage extends StatelessWidget {
@@ -31,18 +32,7 @@ class DetailFoodPage extends StatelessWidget {
             ),
           ),
           alignment: Alignment.topCenter,
-          child: const Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-              ButtonBack(
-                onTap: backScreen,
-              ),
-              Icon(
-                Icons.shopping_cart,
-                color: AssetColors.orangePastel,
-              )
-            ],
-          ),
+          child: const AppbarPrimary(),
         ),
         Align(
           alignment: Alignment.bottomCenter,

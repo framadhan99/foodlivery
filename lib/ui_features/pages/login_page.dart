@@ -3,7 +3,7 @@ import 'package:foodlivery/config/config.dart';
 import 'package:foodlivery/config/ui_helper.dart';
 import 'package:foodlivery/ui_features/pages/home/home_page.dart';
 import 'package:foodlivery/ui_features/pages/signup_page.dart';
-import 'package:foodlivery/ui_features/widgets/button_primary.dart';
+import 'package:foodlivery/ui_features/widgets/button/button_primary.dart';
 import 'package:foodlivery/ui_features/widgets/textfield_general.dart';
 
 class LoginPage extends StatelessWidget {
