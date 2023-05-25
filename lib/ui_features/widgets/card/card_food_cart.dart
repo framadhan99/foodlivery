@@ -3,13 +3,10 @@ import 'package:foodlivery/config/config.dart';
 import 'package:foodlivery/config/ui_helper.dart';
 import 'package:foodlivery/ui_features/widgets/button/button_primary.dart';
 
-class CardFood extends StatelessWidget {
-  const CardFood({
+class CardFoodCart extends StatelessWidget {
+  const CardFoodCart({
     super.key,
-    required this.image,
   });
-
-  final String image;
 
   @override
   Widget build(BuildContext context) {
@@ -20,9 +17,9 @@ class CardFood extends StatelessWidget {
           width: 79,
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(10),
-            image: DecorationImage(
+            image: const DecorationImage(
               fit: BoxFit.cover,
-              image: AssetImage(image),
+              image: AssetImage(AssetPaths.imgBurger),
             ),
           ),
         ),
@@ -47,7 +44,7 @@ class CardFood extends StatelessWidget {
             Row(
               children: [
                 const Icon(
-                  Icons.favorite_outline,
+                  Icons.favorite,
                   size: 16,
                   color: AssetColors.orangePastel,
                 ),
@@ -60,7 +57,28 @@ class CardFood extends StatelessWidget {
                     fontWeight: FontWeight.w600,
                   ),
                 ),
-                horizontalSpace(screenWidth(context) * 0.4),
+                horizontalSpace(screenWidth(context) * 0.3),
+                ButtonPrimary(
+                  label: '+',
+                  labelStyle: AssetStyles.smallDescription.copyWith(
+                    color: Colors.white,
+                    fontSize: 16,
+                    fontWeight: FontWeight.w400,
+                  ),
+                  height: 20,
+                  width: 25,
+                  radius: 5,
+                ),
+                horizontalSpace(10),
+                Text(
+                  '1',
+                  style: AssetStyles.smallDescription.copyWith(
+                    color: AssetColors.orangePastel,
+                    fontSize: 12,
+                    fontWeight: FontWeight.w700,
+                  ),
+                ),
+                horizontalSpace(10),
                 ButtonPrimary(
                   label: '+',
                   labelStyle: AssetStyles.smallDescription.copyWith(

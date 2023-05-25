@@ -16,14 +16,14 @@ class FavouritePage extends StatelessWidget {
     ];
     return Scaffold(
       body: SingleChildScrollView(
-        padding: EdgeInsets.only(
+        padding: const EdgeInsets.only(
           top: 60,
           right: 20,
           left: 20,
         ),
         child: Column(
           children: [
-            AppbarPrimary(
+            const AppbarPrimary(
               title: 'Favourite foods',
             ),
             verticalSpace(44),
