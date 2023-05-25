@@ -34,7 +34,7 @@ class CartPage extends StatelessWidget {
       ),
       bottomSheet: Container(
         height: 40,
-        margin: EdgeInsets.only(
+        margin: const EdgeInsets.only(
           right: 40,
           left: 40,
           bottom: 40,

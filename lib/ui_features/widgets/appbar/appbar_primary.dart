@@ -8,10 +8,12 @@ class AppbarPrimary extends StatelessWidget {
     super.key,
     this.icon,
     this.title,
+    this.action,
   });
 
   final IconData? icon;
   final String? title;
+  final bool? action;
 
   @override
   Widget build(BuildContext context) {
@@ -27,10 +29,12 @@ class AppbarPrimary extends StatelessWidget {
           style: AssetStyles.mediumTitle,
         ),
         const Spacer(),
-        Icon(
-          icon ?? Icons.shopping_cart,
-          color: AssetColors.orangePastel,
-        )
+        action ?? true
+            ? Icon(
+                icon ?? Icons.shopping_cart,
+                color: AssetColors.orangePastel,
+              )
+            : const SizedBox(),
       ],
     );
   }
